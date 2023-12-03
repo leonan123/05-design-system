@@ -4,13 +4,30 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-devDependencies:
-  tsup:
-    specifier: ^8.0.1
-    version: 8.0.1(typescript@5.3.2)
-  typescript:
-    specifier: ^5.3.2
-    version: 5.3.2
+importers:
+
+  .: {}
+
+  packages/react:
+    devDependencies:
+      '@ignite-ui/tokens':
+        specifier: '*'
+        version: 1.1.0
+      tsup:
+        specifier: ^8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: ^5.3.2
+        version: 5.3.2
+
+  packages/tokens:
+    devDependencies:
+      tsup:
+        specifier: ^8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: ^5.3.2
+        version: 5.3.2
 
 packages:
 
@@ -211,6 +228,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@ignite-ui/tokens@1.1.0:
+    resolution: {integrity: sha512-TuVuAGUYK+ymnH22mYGes4YYpXDRqnVe0j5uozMnP1juhb0QeDSnNgBedeehzNLhJglY9XHJvpwPATTm5O5pkg==}
+    dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
