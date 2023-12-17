@@ -16,14 +16,21 @@
     "@storybook/addon-links": "^7.6.3",
     "@storybook/addon-onboarding": "^1.0.9",
     "@storybook/blocks": "^7.6.3",
+    "@storybook/manager-api": "^7.6.5",
     "@storybook/react": "^7.6.3",
     "@storybook/react-vite": "^7.6.3",
     "@storybook/test": "^7.6.3",
+    "@storybook/theming": "^7.6.5",
     "@vitejs/plugin-react": "^4.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "storybook": "^7.6.3",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@ignite-ui/eslint-config": "*",
+    "@ignite-ui/react": "*",
+    "@ignite-ui/tokens": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
