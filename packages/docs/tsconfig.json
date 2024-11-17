@@ -1,11 +1,4 @@
 {
-  "compilerOptions": {
-    "jsx": "react",
-    "baseUrl": "..",
-    "paths": {
-      "@ignite-ui/react": [
-        "react/src"
-      ],
-    }
-  }
+  "extends": "@ignite-ui/ts-config/react.json",
+  "include": ["src"]
 }

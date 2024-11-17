@@ -31,9 +31,4 @@ export const Button = styled('button', {
   },
 })
 
-// export type ButtonProps = {
-//   size?: 'small' | 'big'
-// } & React.ComponentProps<typeof Button>
-
-// export type ButtonProps = VariantProps<typeof Button>
-export type ButtonProps = React.ComponentProps<typeof Button>
+export type ButtonProps = VariantProps<typeof Button>
